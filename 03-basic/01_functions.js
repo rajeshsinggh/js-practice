@@ -29,9 +29,46 @@ const result = addTwoNumbers(3,5)
 
 function loginUserMessage(username){
     if(username === undefined){  //in short we can write eg: !username this will return same 
-        console.log("Please Enter a User Name");
+        // console.log("Please Enter a User Name");
     }
     return `${username} just loogedd in`
 }
 // console.log(loginUserMessage("Rajesh Singh"));
-console.log(loginUserMessage("Rajes Singh"));
+// console.log(loginUserMessage("Rajes Singh"));
+
+//********************** Functions with Object and Array ************************
+
+function calculateCardPrice(...num1){ //... will add all argument values 
+    return num1
+}
+// console.log(calculateCardPrice(200, 300, 400));
+
+
+function calculateCardPrice(val1, val2, ...num1){ //
+    return num1
+}
+// console.log(calculateCardPrice(200, 300, 400, 2000)); // output: 400 and 2000 because 200 and 300 will be taken away by val1 and val2
+
+// const User = {  // one method to pass object
+//     username : "Rajesh", 
+//     price:599
+// }
+function handleobject(anyObject) {
+    console.log(`userName is ${anyObject.username} and price is ${anyObject.price}`);
+}
+// console.log(handleobject(User));
+// handleobject({  //Second method to pass object
+//     username: "Singh",
+//     price: 199
+// })
+
+
+//************* Passing Arrray ************************ //
+
+const myNewArray = [200, 300, 400, 500];
+
+function returnSecondValue(getArray) {
+    return getArray // to pick specific item we need to follow this index syntex : [0] /output: 200
+}
+console.log(returnSecondValue(myNewArray));
+// console.log(returnSecondValue([200, 300, 400, 500]));
