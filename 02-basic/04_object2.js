@@ -68,4 +68,34 @@ users[1].email
 // console.log(Object.values(gitUser));
 // console.log(Object.entries(gitUser));
 
-console.log(gitUser.hasOwnProperty('isLoggedIn'));
+// console.log(gitUser.hasOwnProperty('isLoggedIn'));
+
+
+
+const course = {
+    courseName : "JS in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// course.courseInstructor
+
+// const  {courseInstructor}  = course
+const  {courseInstructor : instructor}  = course  //destracture values eg: courseInstructor to instructor this will return same value
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+//*** Api 
+// {
+//     "name":"Rajesh",
+//     "courseName" : "Js in hindi",
+//     "price":"9999"
+// }
+/// randomuserme
+[
+    {},
+    {},
+    {}
+]
