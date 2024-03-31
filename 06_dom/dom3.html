@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+</head>
+<body style="background-color: black; color: white;">
+    
+</body>
+
+<script>
+    // How to Create Element 
+    const divCreate = document.createElement('div')
+    console.log(divCreate);
+    divCreate.className= "main"
+    divCreate.id = Math.round( Math.random() * 10 + 1)
+
+    // custom Attribute
+    divCreate.setAttribute("title", "generated title")
+    divCreate.style.backgroundColor= "green"
+    divCreate.style.padding= "10px"
+    const addText = document.createTextNode("Chai Aur Codessssssss")
+    divCreate.appendChild(addText)
+
+    //Attech in Document
+    document.body.appendChild(divCreate)
+</script>
+</html>
