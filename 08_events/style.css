@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+h2{
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+#images{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
