@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop"> Stop</button>
+
+</body>
+<script>
+    setTimeout(function(){ // settimeout after given time it will be executed  and it will print only once
+        // console.log("Rajesh Singh");
+    }, 1000) // time given one sec
+
+    const sayRajesh = ()=>{
+        console.log("Rajesh");
+    }
+    
+    const h1change = ()=>{
+        document.querySelector('h1').innerHTML = "Best Js series"    
+    }
+    const changeMe = setTimeout(h1change, 4000)
+
+
+    // clearTimeout(changeMe) // it will stop the setTimeout code
+    
+    document.querySelector('#stop').addEventListener('click',()=>{ //clearetimeout in event 
+        clearTimeout(changeMe) // onclick in stope button it will stop settimeout ()
+        console.log("stopped");
+    } )
+
+</script>
+</html>
